@@ -1,6 +1,5 @@
 import { Controller, Get, Param } from "@nestjs/common";
-import { findAllCollections, findAllLanguages, findCollectionById, findLanguageById, findLanguageForCollection } from "data/api/fake-api";
-import { Collection } from "data/model/collection";
+import {  findAllLanguages, findLanguageById } from "data/api/fake-api";
 import { Language } from "data/model/language";
 
 @Controller({path:'collections/:collectionId'})
