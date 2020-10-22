@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { LanguageModule } from './languages/languages.module';
+import { CollectionsModule } from './collections/controllers/collections.module';
 
 @Module({
-  imports: [LanguageModule],
+  imports: [CollectionsModule],
 })
 export class AppModule {}

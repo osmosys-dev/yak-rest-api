@@ -1,11 +1,11 @@
 export interface Vocabulary {
     id: string;
-    flashcardId: string;
+    languageId: string;
     seqNo: number;
     word: string;
     translated: string;
     plural: string;
     sentence: string;
     synonyms?: string[];
-    declination?: string[]; 
+    declination?: string[];
 }

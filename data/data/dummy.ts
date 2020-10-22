@@ -2,38 +2,38 @@
 export const CONVERSATIONS = {
   1:{
     id: 1,
-    flashcardId:10,
+    languageId:10,
     seqNo:1,
     sentence:'Ki to p cui ?',
     translated: 'What are you cooking ?'
   },
   2:{
     id: 2,
-    flashcardId:7,
+    languageId:7,
     seqNo:2,
     sentence:'Comment allez vous?',
     translated: 'How are you doing sir/madam?'
   },
   3:{
     id: 3,
-    flashcardId:4,
+    languageId:4,
     seqNo:3,
     sentence:'Ile kosztuje ?',
     translated: 'How much it costs ?'
   },
   4:{
     id: 4,
-    flashcardId:1,
+    languageId:1,
     seqNo:4,
     sentence:'Czego pan nie ma ?',
     translated: 'What dont you have sir ?'
   },
 }
-export const FLASHCARDS = {
+export const LANGUAGES: unknown = {
   //Polski
   1: {
     id: 1,
-    languageId: 1,
+    collectionId: 1,
     seqNo: 1,
     category: 'CONVERSATION',
     confident: false,
@@ -41,7 +41,7 @@ export const FLASHCARDS = {
   },
   2: {
     id: 2,
-    languageId: 1,
+    collectionId: 1,
     seqNo: 2,
     category: 'VERB',
     confident: false,
@@ -49,7 +49,7 @@ export const FLASHCARDS = {
   },
   3: {
     id: 3,
-    languageId: 1,
+    collectionId: 1,
     seqNo: 3,
     category: 'VOCABULARY',
     confident: false,
@@ -57,7 +57,7 @@ export const FLASHCARDS = {
   },
   4: {
     id: 4,
-    languageId: 1,
+    collectionId: 1,
     seqNo: 4,
     category: 'CONVERSATION',
     confident: false,
@@ -67,7 +67,7 @@ export const FLASHCARDS = {
   // Francais
   5: {
     id: 5,
-    languageId: 2,
+    collectionId: 2,
     seqNo: 1,
     category: 'VERB',
     confident: false,
@@ -75,7 +75,7 @@ export const FLASHCARDS = {
   },
   6: {
     id: 6,
-    languageId: 2,
+    collectionId: 2,
     seqNo: 2,
     category: 'VOCABULARY',
     confident: false,
@@ -83,7 +83,7 @@ export const FLASHCARDS = {
   },
   7: {
     id: 7,
-    languageId: 2,
+    collectionId: 2,
     seqNo: 3,
     category: 'CONVERSATION',
     confident: false,
@@ -93,7 +93,7 @@ export const FLASHCARDS = {
   // Kreol
   8: {
     id: 8,
-    languageId: 3,
+    collectionId: 3,
     seqNo: 1,
     category: 'VERB',
     confident: false,
@@ -101,7 +101,7 @@ export const FLASHCARDS = {
   },
   9: {
     id: 9,
-    languageId: 3,
+    collectionId: 3,
     seqNo: 2,
     category: 'VOCABULARY',
     confident: false,
@@ -109,7 +109,7 @@ export const FLASHCARDS = {
   },
   10: {
     id: 10,
-    languageId: 3,
+    collectionId: 3,
     seqNo: 3,
     category: 'CONVERSATION',
     confident: false,
@@ -117,7 +117,7 @@ export const FLASHCARDS = {
   },
   
 };
-export const LANGUAGES: any= {
+export const COLLECTIONS: any= {
   1: {
     id: 1,
     name: 'Polski',
@@ -127,7 +127,7 @@ export const LANGUAGES: any= {
     lastAdded: '2 days ago',
     url: 'polski',
     seqNo: 1,
-    flashcardsCount: 4,
+    languagessCount: 4,
   },
   2: {
     id: 2,
@@ -138,7 +138,7 @@ export const LANGUAGES: any= {
     lastAdded: '4 days ago',
     url: 'francais',
     seqNo: 2,
-    flashcardsCount: 3,
+    languagessCount: 3,
   },
   3: {
     id: 3,
@@ -149,14 +149,14 @@ export const LANGUAGES: any= {
     lastAdded: '6 days ago',
     url: 'kreol',
     seqNo: 3,
-    flashcardsCount: 3,
+    languagessCount: 3,
   },
 
 };
 export const MEDIA = {
   1:{
   id: 1,
-  flashcardId:1,
+  languageId:1,
   seqNo:2,
   recording:true,
   recordingFile:'local file or url for dummy and svg for empty',
@@ -166,7 +166,7 @@ export const MEDIA = {
   },
   2:{
   id: 2,
-  flashcardId:2,
+  languageId:2,
   seqNo:2,
   recording:true,
   recordingFile:'local file or url for dummy and svg for empty',
@@ -192,7 +192,7 @@ export const USERS = {
 export const VERBS = {
   1:{
     id: 1,
-    flashcardId:8,
+    languageId:8,
     seqNo:1,
     verb:'Manzer',
     translated: 'To eat',
@@ -205,7 +205,7 @@ export const VERBS = {
   },
   2:{
     id: 2,
-    flashcardId:5,
+    languageId:5,
     seqNo:2,
     verb:'Partir',
     translated: 'To go',
@@ -218,7 +218,7 @@ export const VERBS = {
   },
   3:{
     id: 3,
-    flashcardId:2,
+    languageId:2,
     seqNo:3,
     verb:'Kupić',
     translated: 'To buy',
@@ -234,7 +234,7 @@ export const VERBS = {
 export const VOCABULARIES = {
   1:{
     id: 1,
-    flashcardId:9,
+    languageId:9,
     seqNo:1,
     word:'Sime',
     translated: 'Road/Roads',
@@ -245,7 +245,7 @@ export const VOCABULARIES = {
   },
   2:{
     id: 2,
-    flashcardId:6,
+    languageId:6,
     seqNo:2,
     word:'Gaspillage',
     translated: 'Waste',
@@ -256,7 +256,7 @@ export const VOCABULARIES = {
   },
   3:{
     id: 3,
-    flashcardId:3,
+    languageId:3,
     seqNo:3,
     word:'Owoc',
     translated: 'Fruit',

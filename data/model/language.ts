@@ -1,11 +1,8 @@
 export interface Language {
-    _id: string;
-    name: string;
-    conversation: number;
-    vocabulary: number;
-    verb: number;
-    lastAdded: string;
-    url: string;
+    id: string;
+    collectionId: string;
     seqNo: number;
-    flashcardsCount?: number;
-    }
+    category: string;
+    confident: boolean;
+    dateAdded: string;
+}
