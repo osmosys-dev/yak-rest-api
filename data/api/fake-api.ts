@@ -25,18 +25,19 @@ import { Language } from "data/model/language";
   export function findLanguageById(languageId: number) {
     return LANGUAGES[languageId];
   }
-  export function findFlashcardForLanguage(languageId: number) {
-    const flashcard = {...findConversationForLanguage(languageId), ...findVerbForLanguage(languageId), ...findVocabularyForLanguage(languageId)}
+  export function findAllFlashcardsForLanguage(languageId: number) {
+    const flashcards = {...findConversationsForLanguage(languageId), ...findVerbsForLanguage(languageId), ...findVocabulariesForLanguage(languageId)}
 
-    return flashcard
+    return flashcards
   }
   
-   function findConversationForLanguage(languageId: number) {
+  
+  export function findConversationsForLanguage(languageId: number) {
     return Object.values(CONVERSATIONS).filter(conversation => conversation.languageId == languageId);
   }
-   function findVerbForLanguage(languageId: number) {
+  export function findVerbsForLanguage(languageId: number) {
     return Object.values(VERBS).filter(verb => verb.languageId == languageId);
   }
-   function findVocabularyForLanguage(languageId: number) {
+  export function findVocabulariesForLanguage(languageId: number) {
     return Object.values(VOCABULARIES).filter(vocabulary => vocabulary.languageId == languageId);
   }
