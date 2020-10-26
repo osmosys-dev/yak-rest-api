@@ -1,8 +1,7 @@
 import { Module } from "@nestjs/common";
-import { LanguageController } from "./controllers/language.controller";
 import { LanguagesController } from "./controllers/languages.controller";
 
 @Module({
-    controllers:[LanguagesController, LanguageController]
+    controllers: [LanguagesController]
 })
 export class LanguagesModule {}

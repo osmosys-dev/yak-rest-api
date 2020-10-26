@@ -1,16 +1,16 @@
 import { Controller, Get, Param } from "@nestjs/common";
-import {  findAllLanguages, findLanguageById } from "data/api/fake-api";
+import { getLanguageByUrl } from "data/api/fake-api";
 import { Language } from "data/model/language";
 
 @Controller({path:'languages'})
 export class LanguagesController {
     @Get()
-    async findAllLanguages(): Promise<Language[]>{
-        return findAllLanguages()
-     }
+    async getAllLanguages(): Promise<Language[]>{
+       return this.getAllLanguages();
+    }
 
-    @Get(':languageId')
-    async findLanguageById(@Param('languageId') languageId){
-        return findLanguageById(languageId)
+    @Get(':languageUrl')
+    async getLanguageByUrl(@Param('languageUrl') languageUrl){
+        return getLanguageByUrl(languageUrl);
     }
 }
