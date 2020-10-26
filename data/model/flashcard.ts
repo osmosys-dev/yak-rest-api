@@ -1,5 +1,5 @@
 export interface Flashcard {
-    _id: string;
+    id: string;
     languageId: string;
     conversationId?: string;
     verbId?: string;

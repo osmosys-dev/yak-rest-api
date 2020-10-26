@@ -1,5 +1,5 @@
 export interface Conversation {
-    _id: string;
+    id: string;
     flashcardId: string;
     seqNo: number;
     sentence: string;

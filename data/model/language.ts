@@ -1,11 +1,11 @@
 export interface Language {
-    _id: string;
+    id: string;
     userId: string;
     name: string;
     conversation: number;
     vocabulary: number;
     verb: number;
-    lastAdded: string;
+    lastAdded?: string;
     url: string;
     seqNo: number;
     flashcardsCount?: number;

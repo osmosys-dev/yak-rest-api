@@ -10,10 +10,10 @@ export const USERS = {
       password: 'password',
     }
 };
-export const LANGUAGES: any= {
+export const LANGUAGES: any = {
     1: {
-      id: 1,
-      userID: 1,
+      id: '1',
+      userId: '1',
       name: 'Polski',
       conversation: 10,
       vocabulary: 20,
@@ -24,8 +24,8 @@ export const LANGUAGES: any= {
       flashcardsCount: 4,
     },
     2: {
-      id: 2,
-      userID: 1,
+      id: '2',
+      userId: '1',
       name: 'Francais',
       conversation: 33,
       vocabulary: 45,
@@ -36,8 +36,8 @@ export const LANGUAGES: any= {
       flashcardsCount: 3,
     },
     3: {
-      id: 3,
-      userID: 1,
+      id: '3',
+      userId: '1',
       name: 'Kreol',
       conversation: 56,
       vocabulary: 12,
@@ -49,39 +49,39 @@ export const LANGUAGES: any= {
     },
   
 };
-export const FLASHCARDS: unknown = {
+export const FLASHCARDS: any = {
     //Polski
     1: {
-      id: 1,
-      languageId: 1,
-      conversationId: 3,
+      id: '1',
+      languageId: '1',
+      conversationId: '3',
       seqNo: 1,
       category: 'CONVERSATION',
       confident: false,
       dateAdded:'Sat 14-03-2020',
     },
     2: {
-      id: 2,
-      languageId: 1,
-      verbId: 3,
+      id: '2',
+      languageId: '1',
+      verbId: '3',
       seqNo: 2,
       category: 'VERB',
       confident: false,
       dateAdded:'Sat 14-03-2020',
     },
     3: {
-      id: 3,
-      languageId: 1,
-      vocabularyId: 3,
+      id: '3',
+      languageId: '1',
+      vocabularyId: '3',
       seqNo: 3,
       category: 'VOCABULARY',
       confident: false,
       dateAdded:'Sat 4-03-2020',
     },
     4: {
-      id: 4,
-      languageId: 1,
-      conversationId: 4,
+      id: '4',
+      languageId: '1',
+      conversationId: '4',
       seqNo: 4,
       category: 'CONVERSATION',
       confident: false,
@@ -90,27 +90,27 @@ export const FLASHCARDS: unknown = {
   
     // Francais
     5: {
-      id: 5,
-      languageId: 2,
-      verbId: 2,
+      id: '5',
+      languageId: '2',
+      verbId: '2',
       seqNo: 1,
       category: 'VERB',
       confident: false,
       dateAdded:'Sat 14-03-2020',
     },
     6: {
-      id: 6,
-      languageId: 2,
-      vocabularyId: 2,
+      id: '6',
+      languageId: '2',
+      vocabularyId: '2',
       seqNo: 2,
       category: 'VOCABULARY',
       confident: false,
       dateAdded:'Sat 14-03-2020',
     },
     7: {
-      id: 7,
-      languageId: 2,
-      conversationId: 2,
+      id: '7',
+      languageId: '2',
+      conversationId: '2',
       seqNo: 3,
       category: 'CONVERSATION',
       confident: false,
@@ -119,27 +119,27 @@ export const FLASHCARDS: unknown = {
   
     // Kreol
     8: {
-      id: 8,
-      languageId: 3,
-      verbId: 1,
+      id: '8',
+      languageId: '3',
+      verbId: '1',
       seqNo: 1,
       category: 'VERB',
       confident: false,
       dateAdded:'Sat 14-03-2020',
     },
     9: {
-      id: 9,
-      languageId: 3,
-      vocabularyId: 1,
+      id: '9',
+      languageId: '3',
+      vocabularyId: '1',
       seqNo: 2,
       category: 'VOCABULARY',
       confident: false,
       dateAdded:'Sat 14-03-2020',
     },
     10: {
-      id: 10,
-      languageId: 3,
-      conversationId: 1,
+      id: '10',
+      languageId: '3',
+      conversationId: '1',
       seqNo: 3,
       category: 'CONVERSATION',
       confident: false,
