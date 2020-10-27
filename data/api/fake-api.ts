@@ -1,4 +1,4 @@
-import { FLASHCARDS, LANGUAGES } from "data/data/dummy";
+import {  FLASHCARDS, LANGUAGES } from "data/data/dummy";
 import { Flashcard } from "data/model/flashcard";
 import { Language } from "data/model/language";
 
@@ -7,14 +7,14 @@ import { Language } from "data/model/language";
 export function getAllLanguages(): Language[]{
     return Object.values(LANGUAGES);
 }
-export function getLanguageById(languageId: string):Language{
-    return LANGUAGES[languageId];
+export function getLanguageById(languageId: any):Language{
+    return LANGUAGES[languageId]
 }
 
 // Flashcards
 export function getAllFlashcards(): Flashcard[] {
     return Object.values(FLASHCARDS);
 }
-export function getFlashcardById(languageId: string):Flashcard{
-    return FLASHCARDS[languageId];
+export function getFlashcardsByLanguageId(languageId: string):Flashcard[]{
+    return Object.values(FLASHCARDS).filter((flashcard) => flashcard.languageId === languageId);
 }

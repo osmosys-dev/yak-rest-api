@@ -49,7 +49,7 @@ export const LANGUAGES: any = {
     },
   
 };
-export const FLASHCARDS: any = {
+export const FLASHCARDS = {
     //Polski
     1: {
       id: '1',

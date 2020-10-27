@@ -1,17 +1,13 @@
-import { Controller, Get, Param } from "@nestjs/common";
-import { getAllFlashcards, getFlashcardById } from "data/api/fake-api";
+import { Controller, Get, Query } from "@nestjs/common";
+import { getFlashcardsByLanguageId} from "data/api/fake-api";
 import { Flashcard } from "data/model/flashcard";
 
 @Controller({path: 'flashcards'})
 export class FlashcardsController {
     @Get()
-    async getAllFlashcards(): Promise<Flashcard[]>{
-        return getAllFlashcards()
+    async getFlashcardsByLanguageId(@Query('languageId') languageId): Promise<Flashcard[]>{
+        return getFlashcardsByLanguageId(languageId)
     }
 
-    @Get(':languageId')
-    async getFlashcardsByLanguageId(@Param('languageId') languageId): Promise<Flashcard>{
-        return getFlashcardById(languageId)
-    }
 
 }
